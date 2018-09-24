@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="720.0" prefWidth="1280.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BasicController">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <Label layoutX="25.0" layoutY="240.0" text="Number of Eateries" underline="true" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="245.0" />
+            <Label layoutX="28.0" layoutY="193.0" text="Seconds Before Person Leaves" underline="true" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="215.0" />
+            <Label layoutX="18.0" layoutY="150.0" text="Average Seconds Per Eatery" underline="true" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="185.0" />
+            <Label layoutX="16.0" layoutY="125.0" text="Total Time in Seconds" underline="true" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="155.0" />
+            <Label layoutX="10.0" layoutY="85.0" prefHeight="18.0" prefWidth="184.0" text="Average Seconds Per Cashier" underline="true" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="125.0" />
+            <Label layoutX="18.0" layoutY="58.0" prefHeight="18.0" prefWidth="177.0" text="Seconds to Next Person" underline="true" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="95.0" />
+            <Label graphicTextGap="6.0" layoutX="28.0" layoutY="31.0" prefHeight="18.0" prefWidth="108.0" text="Input Information" underline="true" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="65.0" />
+            <Button fx:id="startButton" layoutX="125.0" layoutY="363.0" mnemonicParsing="false" onAction="#startSimulation" prefHeight="27.0" prefWidth="150.0" text="Start Simulation" AnchorPane.leftAnchor="125.0" AnchorPane.topAnchor="360.0" />
+            <Button fx:id="quitButton" layoutX="292.0" layoutY="361.0" mnemonicParsing="false" onAction="#quitSimulation" prefHeight="30.0" prefWidth="150.0" text="Quit Simulation" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="360.0" />
+            <Label layoutX="15.0" layoutY="302.0" text="Output Information" underline="true" AnchorPane.bottomAnchor="185.0" AnchorPane.leftAnchor="15.0" />
+            <Label layoutX="15.0" layoutY="331.0" text="Throughput" underline="true" AnchorPane.bottomAnchor="155.0" AnchorPane.leftAnchor="15.0" />
+            <Label layoutX="15.0" layoutY="374.0" text="Average Time for Person Start to Finish" underline="true" AnchorPane.bottomAnchor="125.0" AnchorPane.leftAnchor="15.0" />
+            <TextField fx:id="secondsToNext" layoutX="300.0" layoutY="40.0" onAction="#secondsToNext" prefHeight="15.0" prefWidth="150.0" AnchorPane.bottomAnchor="633.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="90.0" />
+            <TextField fx:id="averageSecondsPerCashier" layoutX="300.0" layoutY="79.0" onAction="#averageSecondsPerCashier" prefHeight="15.0" prefWidth="150.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="120.0" />
+            <TextField fx:id="totalTime" layoutX="300.0" layoutY="109.0" onAction="#totalTime" prefHeight="15.0" prefWidth="150.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="150.0" />
+            <TextField fx:id="averageSecondsPerEatery" layoutX="300.0" layoutY="139.0" onAction="#averageSecondsPerEatery" prefHeight="15.0" prefWidth="150.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="180.0" />
+            <TextField fx:id="secondsBeforePersonLeaves" layoutX="300.0" layoutY="181.0" onAction="#secondsBeforePersonLeaves" prefHeight="15.0" prefWidth="150.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="210.0" />
+            <TextField fx:id="numOfEateries" layoutX="300.0" layoutY="199.0" onAction="#numOfEateries" prefHeight="15.0" prefWidth="150.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="240.0" />
+            <TextField fx:id="throughput" layoutX="325.0" layoutY="343.0" onAction="#throughput" prefHeight="15.0" prefWidth="150.0" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="300.0" />
+            <TextField fx:id="averageStartToFinish" layoutX="325.0" layoutY="382.0" onAction="#averageStartToFinish" prefHeight="15.0" prefWidth="150.0" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="300.0" />
+            <Label graphicTextGap="6.0" layoutX="205.0" layoutY="15.0" prefHeight="18.0" prefWidth="350.0" text="____________________________________________________________" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="65.0" />
+            <Label graphicTextGap="6.0" layoutX="192.0" layoutY="327.0" prefHeight="18.0" prefWidth="350.0" text="____________________________________________________________" AnchorPane.bottomAnchor="190.0" AnchorPane.leftAnchor="200.0" />
+            <Label layoutX="767.0" layoutY="38.0" prefHeight="55.0" prefWidth="191.0" text="Statistics" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
+            <Label layoutX="671.0" layoutY="117.0" prefHeight="30.0" prefWidth="117.0" text="Eatery 1" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="120.0">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="687.0" layoutY="184.0" prefHeight="30.0" prefWidth="117.0" text="Eatery 2" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="240.0">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="687.0" layoutY="285.0" prefHeight="30.0" prefWidth="117.0" text="Eatery 3" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="360.0">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="660.0" layoutY="436.0" prefHeight="30.0" prefWidth="117.0" text="Eatery 4" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="480.0">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="702.0" layoutY="513.0" prefHeight="30.0" prefWidth="117.0" text="Eatery 5" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="600.0">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="915.0" layoutY="198.0" prefHeight="35.0" prefWidth="290.0" text="Cashier 1 Througput" AnchorPane.leftAnchor="900.0" AnchorPane.topAnchor="200.0">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="915.0" layoutY="264.0" prefHeight="35.0" prefWidth="301.0" text="Cashier 2 Throughput" AnchorPane.leftAnchor="900.0" AnchorPane.rightAnchor="59.0" AnchorPane.topAnchor="280.0">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="899.0" layoutY="360.0" prefHeight="35.0" prefWidth="313.0" text="Num People Produced">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="643.0" layoutY="155.0" prefHeight="23.0" prefWidth="117.0" text="Throughput" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="150.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="664.0" layoutY="281.0" prefHeight="23.0" prefWidth="117.0" text="Throughput" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="270.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="664.0" layoutY="401.0" prefHeight="23.0" prefWidth="117.0" text="Throughput" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="390.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="643.0" layoutY="515.0" prefHeight="23.0" prefWidth="117.0" text="Throughput" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="510.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="682.0" layoutY="627.0" prefHeight="23.0" prefWidth="117.0" text="Throughput" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="630.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="643.0" layoutY="182.0" prefHeight="23.0" prefWidth="117.0" text="Still in Q" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="180.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="643.0" layoutY="304.0" prefHeight="23.0" prefWidth="117.0" text="Still in Q" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="300.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="678.0" layoutY="425.0" prefHeight="23.0" prefWidth="117.0" text="Still in Q" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="420.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="643.0" layoutY="537.0" prefHeight="23.0" prefWidth="117.0" text="Still in Q" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="540.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="643.0" layoutY="649.0" prefHeight="23.0" prefWidth="117.0" text="Still in Q" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="660.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="643.0" layoutY="212.0" prefHeight="23.0" prefWidth="129.0" text="Max Q Length" AnchorPane.rightAnchor="488.0" AnchorPane.topAnchor="210.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="643.0" layoutY="330.0" prefHeight="23.0" prefWidth="129.0" text="Max Q Length" AnchorPane.rightAnchor="488.0" AnchorPane.topAnchor="330.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="643.0" layoutY="443.0" prefHeight="23.0" prefWidth="129.0" text="Max Q Length" AnchorPane.rightAnchor="488.0" AnchorPane.topAnchor="450.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="643.0" layoutY="567.0" prefHeight="23.0" prefWidth="129.0" text="Max Q Length" AnchorPane.rightAnchor="488.0" AnchorPane.topAnchor="570.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="643.0" layoutY="690.0" prefHeight="23.0" prefWidth="129.0" text="Max Q Length" AnchorPane.rightAnchor="488.0" AnchorPane.topAnchor="690.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="899.0" layoutY="409.0" prefHeight="23.0" prefWidth="130.0" text="Normal" AnchorPane.bottomAnchor="320.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="899.0" layoutY="450.0" prefHeight="23.0" prefWidth="130.0" text="Special Needs" AnchorPane.bottomAnchor="280.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="899.0" layoutY="486.0" prefHeight="23.0" prefWidth="130.0" text="Limited Time" AnchorPane.bottomAnchor="240.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="899.0" layoutY="529.0" prefHeight="23.0" prefWidth="130.0" text="Total " AnchorPane.bottomAnchor="200.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="906.0" layoutY="120.0" prefHeight="35.0" prefWidth="191.0" text="Num in Line" AnchorPane.leftAnchor="900.0" AnchorPane.rightAnchor="163.0" AnchorPane.topAnchor="120.0">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <TextField fx:id="throughput1" layoutX="772.0" layoutY="150.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.topAnchor="150.0" />
+            <TextField fx:id="stillInQ1" layoutX="772.0" layoutY="180.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.rightAnchor="388.0" AnchorPane.topAnchor="180.0" />
+            <TextField fx:id="maxQLength1" layoutX="772.0" layoutY="210.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.leftAnchor="772.0" AnchorPane.rightAnchor="388.0" AnchorPane.topAnchor="210.0" />
+            <TextField fx:id="throughput2" layoutX="772.0" layoutY="267.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="stillInQ2" layoutX="772.0" layoutY="298.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.topAnchor="298.0" />
+            <TextField fx:id="maxQLength2" layoutX="772.0" layoutY="328.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="throughput3" layoutX="772.0" layoutY="388.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="stillInQ3" layoutX="772.0" layoutY="419.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.topAnchor="418.0" />
+            <TextField fx:id="maxQLength3" layoutX="772.0" layoutY="448.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="throughput4" layoutX="772.0" layoutY="508.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="stillInQ4" layoutX="772.0" layoutY="538.0" onAction="#secondsToNext" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="maxQLength4" layoutX="772.0" layoutY="568.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="throughput5" layoutX="772.0" layoutY="628.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="stillInQ5" layoutX="772.0" layoutY="658.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="maxQLength5" layoutX="772.0" layoutY="688.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="cashierNumInLine" layoutX="900.0" layoutY="159.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="cashier1Throughput" layoutX="900.0" layoutY="240.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="cashier2Throughput" layoutX="900.0" layoutY="317.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="numNormalPeople" layoutX="1072.0" layoutY="407.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.bottomAnchor="320.0" />
+            <TextField fx:id="numSpecialNeeds" layoutX="1072.0" layoutY="448.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.bottomAnchor="280.0" />
+            <TextField fx:id="numLimitedTime" layoutX="1072.0" layoutY="484.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.bottomAnchor="240.0" />
+            <TextField fx:id="numTotal" layoutX="1072.0" layoutY="527.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.bottomAnchor="200.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
